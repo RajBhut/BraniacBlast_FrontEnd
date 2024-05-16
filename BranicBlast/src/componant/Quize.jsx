@@ -8,7 +8,7 @@ const Quize = ({id}) => {
     useEffect(()=>{
         async function fetchData(){
             try{
-        let res =    await  axios.get(`http://localhost:3000/api/${id}`)
+        let res =    await  axios.get(`https://brainac-blast-backend.vercel.app/api/${id}`)
 setQuestions(res.data);
             }
             catch(error){

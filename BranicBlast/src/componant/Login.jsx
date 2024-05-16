@@ -33,7 +33,7 @@ const Login = () => {
     try {
       const { email, password  , username} = formData;
 
-      const url = mode === 'login' ? 'http://localhost:3000/login' : 'http://localhost:3000/signup';
+      const url = mode === 'login' ? 'https://brainac-blast-backend.vercel.app/login' : 'https://brainac-blast-backend.vercel.app/signup';
       const response = await axios.post(url, formData);
 
       console.log('Success:', response.data); 

@@ -13,7 +13,7 @@ const Quiz = ({ id }) => {
   useEffect(() => {
     async function fetchData()  {
       try {
-        const response = await axios.get(`http://localhost:3000/api/${1}`);
+        const response = await axios.get(`https://brainac-blast-backend.vercel.app/api/${1}`);
         
         setQuestions(response.data);
       } catch (error) {

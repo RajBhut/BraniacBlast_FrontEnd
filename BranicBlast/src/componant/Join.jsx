@@ -1,4 +1,5 @@
 import axios, { Axios } from 'axios';
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -12,7 +13,7 @@ const [isfinish , setisfinish] = useState(false)
     setIsLoading(true); // Set loading indicator before request
     try {
 
-      const response = await axios.get(`http://localhost:3000/api/${code}`, { code }); // Send data in request body
+      const response = await axios.get(`https://brainac-blast-backend.vercel.app/api/${code}`, { code }); // Send data in request body
     
       if (response.status !== 200) {
         throw new Error('Join failed');

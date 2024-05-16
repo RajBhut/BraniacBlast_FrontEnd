@@ -36,12 +36,14 @@ const Create = () => {
               opt2: question.options[1] || '',
               opt3: question.options[2] || '',
               opt4: question.options[3] || '',
-              ans: question.options[4] || '', // Add answer property
+              ans: question.options[4] || '',
+              owner_id : 1 ,
+              genration_code : '1' // Add answer field
             })),
           };
 
           try {
-            const response = await axios.post('http://localhost:3000/quizzes', quizData);
+            const response = await axios.post('https://brainac-blast-backend.vercel.app/quizzes', quizData);
             // ...
           } catch (error) {
             // ...
@@ -119,6 +121,8 @@ const Create = () => {
 
             <button onClick={handleAddQuestion}>Add Question</button>
             <button onClick={handleSubmit}>Submit Quiz</button>
+            
+
         </div>
     );
 };
