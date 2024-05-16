@@ -38,7 +38,7 @@ const Create = () => {
               opt4: question.options[3] || '',
               ans: question.options[4] || '',
               owner_id : 1 ,
-              genration_code : '1' // Add answer field
+              generation_code : '1' // Add answer field
             })),
           };
 
