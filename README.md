@@ -1,2 +1,0 @@
-# BraniacBlast
-# BrainacBlast_frontend

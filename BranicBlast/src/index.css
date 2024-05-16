@@ -8,3 +8,7 @@
     align-items: center;
     justify-content: center;
 }
+
+body{
+    background: rgb(187, 209, 235);
+}
